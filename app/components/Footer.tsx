@@ -19,8 +19,8 @@ export default function Footer() {
       <div className="relative z-20 max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* 👈 التواصل الاجتماعي */}
         <div className="flex flex-col items-center md:items-start text-center md:text-right">
-          <p className="text-lg mb-2 self-center md:self-start ">تواصل معنا</p>
-          <div className="flex gap-3 text-2xl justify-center">
+          <p className="text-2xl underline mb-2 self-center md:self-start ">تواصل معنا</p>
+          <div className="flex gap-3 text-3xl justify-center">
             <a
               href="https://wa.me/00218925881949"
               target="_blank"

@@ -19,9 +19,7 @@ export default function Footer() {
       <div className="relative z-20 max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* 👈 التواصل الاجتماعي */}
         <div className="flex flex-col items-center md:items-start text-center md:text-right">
-          <p className="text-lg mb-2 self-center md:self-start ">
-            تواصل معنا
-          </p>
+          <p className="text-lg mb-2 self-center md:self-start ">تواصل معنا</p>
           <div className="flex gap-3 text-2xl justify-center">
             <a
               href="https://wa.me/00218925881949"
@@ -56,16 +54,25 @@ export default function Footer() {
         {/* 🔷 روابط الصفحات */}
         <div className="flex flex-col items-center">
           <div className="flex flex-row gap-6 text-2xl font-semibold">
-            <Link href="/" className="hover:underline hover:text-black">
+            <Link href="/" className="hover:underline hover:text-[#000080]">
               الرئيسية
             </Link>
-            <Link href="/about" className="hover:underline hover:text-black">
+            <Link
+              href="/about"
+              className="hover:underline hover:text-[#000080]"
+            >
               من نحن
             </Link>
-            <Link href="/services" className="hover:underline hover:text-black">
+            <Link
+              href="/services"
+              className="hover:underline hover:text-[#000080]"
+            >
               الخدمات
             </Link>
-            <Link href="/products" className="hover:underline hover:text-black">
+            <Link
+              href="/products"
+              className="hover:underline hover:text-[#000080]"
+            >
               المنتجات
             </Link>
           </div>
@@ -74,7 +81,7 @@ export default function Footer() {
         {/* 👉 الشعار والنص */}
         <div className="flex flex-col items-end text-right ">
           <Image
-            src="/images/Auto-logo-black.png"
+            src="/images/Auto-logo-dunkelblau.png"
             alt="Logo"
             width={200}
             height={50}

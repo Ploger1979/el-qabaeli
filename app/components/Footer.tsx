@@ -85,7 +85,7 @@ export default function Footer() {
             alt="Logo"
             width={200}
             height={50}
-            className="object-contain scale-[1.3]"
+            className="object-contain scale-[1.8]"
           />
           <p className="text-lg font-semibold mt-0 ">
             القبائلي – إكسسوارات تليق بسيارتك

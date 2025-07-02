@@ -15,7 +15,7 @@ export default function ProductsPage() {
       {/* شبكة المنتجات */}
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {/* منتج 1 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/flamingo_foam.jpg"
             alt="منظف فلامنغو"
@@ -25,7 +25,7 @@ export default function ProductsPage() {
           <h2 className="text-2xl font-bold mb-2 text-pink-700">
             منظف رغوي متعدد الاستخدام
             <br />
-            <span className=" text-[#20438a]">Flamingo 650ML</span>
+            <span className="text-[#20438a]">Flamingo 650ML</span>
           </h2>
 
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -50,11 +50,11 @@ export default function ProductsPage() {
             6. امسح الزائد من الزجاج أو الطلاء فورًا.
           </p>
 
-          <p className="text-xl text-red-600 font-bold"> السعر : 25 د.ل</p>
+          <p className="text-xl text-red-600 font-bold">السعر : 25 د.ل</p>
         </div>
 
         {/* منتج 2 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/tire_shine.jpg"
             alt="ملمع الإطارات"
@@ -99,7 +99,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 3 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/flamingo_ac.jpg"
             alt="منظف تكييف الهواء"
@@ -146,7 +146,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 4 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <div className="grid grid-cols-2 gap-4 mb-4">
             <img
               src="/images/motagat/dashboard_polish.jpg"
@@ -201,7 +201,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 5 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/fuel_injector_cleaner.jpg"
             alt="منظف حاقن الوقود فلامنغو"
@@ -239,7 +239,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 6 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/led_lens_5d.jpg"
             alt="عدسة أمامية LED عالية الأداء"
@@ -273,7 +273,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 7 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/seat_cover_beige_red.jpg"
             alt="غطاء كراسي بيج × أحمر"
@@ -308,7 +308,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 8 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/seat_cover_fabric_beige.jpg"
             alt="طقم كراسي قماش بيج"
@@ -344,7 +344,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 9 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/seat_cover_black_green.jpg"
             alt="غطاء كراسي أسود × أخضر"
@@ -378,7 +378,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 10 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/seat_cover_leather_brown_black.jpg"
             alt="غطاء كراسي جلد فاخر بني وأسود"
@@ -415,7 +415,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 11 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/copper-leather-seat-cover.jpg" // ← اسم الصورة احفظها عندك كده
             alt="غطاء كراسي جلد - Copper × Black"
@@ -448,7 +448,7 @@ export default function ProductsPage() {
         </div>
 
         {/* منتج 12 */}
-        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300">
+        <div className="bg-white rounded-lg shadow-md p-4 hover:scale-105 transition-transform duration-300 border-1 border-transparent hover:border-[#000080]">
           <img
             src="/images/motagat/holder-gt13.jpg"
             alt="حامل نقال GERLAX GT-13"

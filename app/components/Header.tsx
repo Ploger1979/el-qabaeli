@@ -10,8 +10,28 @@ export default function Header() {
 
   return (
     <header className="bg-[#000080] px-4 sm:px-8 py-3 text-white">
-      <div className="flex items-center justify-between">
-        {/* Logo */}
+      {/* ✅ Desktop Header */}
+      <div className="hidden md:flex items-center justify-between">
+        {/* اليمين: المنيو */}
+        <nav className="flex gap-6 text-lg font-semibold">
+          <Link href="/" className="hover:underline hover:text-blue-300">
+            الرئيسية
+          </Link>
+          <Link href="/about" className="hover:underline hover:text-blue-300">
+            من نحن
+          </Link>
+          <Link href="/services" className="hover:underline hover:text-blue-300">
+            الخدمات
+          </Link>
+          <Link href="/products" className="hover:underline hover:text-blue-300">
+            المنتجات
+          </Link>
+          <Link href="/location" className="hover:underline hover:text-blue-300">
+            موقعنا
+          </Link>
+        </nav>
+
+        {/* النص: اللوجو */}
         <div className="flex-shrink-0">
           <Image
             src="/images/Auto-logo-Photoroom.png"
@@ -22,101 +42,53 @@ export default function Header() {
           />
         </div>
 
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle Menu"
-          >
-            {menuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
-          </button>
-        </div>
-
-        {/* Navigation – Desktop */}
-        <nav className="hidden md:flex gap-6 text-lg font-semibold">
-          <Link href="/" className="hover:underline hover:text-blue-300">
-            الرئيسية
-          </Link>
-          <Link href="/about" className="hover:underline hover:text-blue-300">
-            من نحن
-          </Link>
-          <Link
-            href="/services"
-            className="hover:underline hover:text-blue-300"
-          >
-            الخدمات
-          </Link>
-          <Link
-            href="/products"
-            className="hover:underline hover:text-blue-300"
-          >
-            المنتجات
-          </Link>
-          <Link
-            href="/location"
-            className="hover:underline hover:text-blue-300"
-          >
-            موقعنا
-          </Link>
-        </nav>
-      </div>
-
-      {/* Mobile Navigation + Social */}
-      <div
-        className={`flex-col md:flex-row md:flex justify-between items-center mt-4 ${menuOpen ? "flex" : "hidden"
-          } md:mt-0`}
-      >
-        {/* Navigation – Desktop */}
-        <nav className="hidden md:flex items-center gap-6 text-lg font-semibold h-12">
-          <Link href="/" className="flex items-center hover:underline hover:text-blue-300">
-            الرئيسية
-          </Link>
-          <Link href="/about" className="flex items-center hover:underline hover:text-blue-300">
-            من نحن
-          </Link>
-          <Link href="/services" className="flex items-center hover:underline hover:text-blue-300">
-            الخدمات
-          </Link>
-          <Link href="/products" className="flex items-center hover:underline hover:text-blue-300">
-            المنتجات
-          </Link>
-          <Link href="/location" className="flex items-center hover:underline hover:text-blue-300">
-            موقعنا
-          </Link>
-        </nav>
-
-
-        {/* Social Icons */}
-        <div className="flex gap-2 justify-center text-xl">
-          <a
-            href="https://wa.me/00218925881949"
-            target="_blank"
-            className="bg-green-500 p-2 rounded-full hover:scale-110 transition"
-          >
-            <FaWhatsapp />
-          </a>
-          <a
-            href="https://facebook.com/slyman.kylany.193044"
-            target="_blank"
-            className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="https://www.tiktok.com/@sliman.kelane"
-            target="_blank"
-            className="bg-black p-2 rounded-full hover:scale-110 transition"
-          >
-            <FaTiktok />
-          </a>
-          <a
-            href="mailto:sskknnrr15@gmail.com"
-            className="bg-red-500 p-2 rounded-full hover:scale-110 transition"
-          >
-            <FaEnvelope />
-          </a>
+        {/* اليسار: سوشيال ميديا */}
+        <div className="flex gap-2 text-xl">
+          <a href="https://wa.me/00218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
+          <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
+          <a href="https://www.tiktok.com/@sliman.kelane" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 transition"><FaTiktok /></a>
+          <a href="mailto:sskknnrr15@gmail.com" className="bg-red-500 p-2 rounded-full hover:scale-110 transition"><FaEnvelope /></a>
         </div>
       </div>
+
+      {/* ✅ Mobile Header */}
+      <div className="md:hidden flex justify-between items-center">
+        {/* اللوجو */}
+        <Image
+          src="/images/Auto-logo-Photoroom.png"
+          alt="القبائلي"
+          width={100}
+          height={40}
+          className="object-contain"
+        />
+
+        {/* زر المينيو */}
+        <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
+          {menuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
+        </button>
+      </div>
+
+      {/* ✅ Mobile Menu & Social */}
+      {menuOpen && (
+        <div className="md:hidden mt-4 flex flex-col items-center gap-4">
+          {/* المنيو */}
+          <nav className="flex flex-col gap-3 text-lg font-semibold">
+            <Link href="/" className="hover:underline hover:text-blue-300">الرئيسية</Link>
+            <Link href="/about" className="hover:underline hover:text-blue-300">من نحن</Link>
+            <Link href="/services" className="hover:underline hover:text-blue-300">الخدمات</Link>
+            <Link href="/products" className="hover:underline hover:text-blue-300">المنتجات</Link>
+            <Link href="/location" className="hover:underline hover:text-blue-300">موقعنا</Link>
+          </nav>
+
+          {/* السوشيال */}
+          <div className="flex gap-3 text-xl">
+            <a href="https://wa.me/00218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
+            <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
+            <a href="https://www.tiktok.com/@sliman.kelane" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 transition"><FaTiktok /></a>
+            <a href="mailto:sskknnrr15@gmail.com" className="bg-red-500 p-2 rounded-full hover:scale-110 transition"><FaEnvelope /></a>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

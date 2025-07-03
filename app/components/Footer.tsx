@@ -20,7 +20,7 @@ export default function Footer() {
           <p className="text-xl underline mb-2">تواصل معنا</p>
           <div className="flex justify-center md:justify-start gap-3 text-2xl">
             <a
-              href="https://wa.me/00218925881949"
+              href="https://wa.me/218925881949"
               target="_blank"
               className="bg-green-500 p-2 rounded-full hover:scale-110 transition"
             >

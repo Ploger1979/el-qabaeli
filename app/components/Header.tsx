@@ -68,7 +68,7 @@ export default function Header() {
         } md:mt-0`}
       >
         {/* Navigation – Mobile */}
-        <nav className="flex flex-col md:hidden gap-4 text-lg mb-4">
+        <nav className="flex flex-wrap justify-center gap-4 text-white text-lg sm:text-xl font-semibold">
           <Link href="/" className="hover:underline hover:text-blue-300">
             الرئيسية
           </Link>
@@ -105,14 +105,14 @@ export default function Header() {
             <FaWhatsapp />
           </a>
           <a
-            href="https://facebook.com/slymn.kyln"
+            href="https://facebook.com/slyman.kylany.193044"
             target="_blank"
             className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"
           >
             <FaFacebookF />
           </a>
           <a
-            href="https://www.tiktok.com/sliman kelane"
+            href="https://www.tiktok.com/@sliman.kelane"
             target="_blank"
             className="bg-black p-2 rounded-full hover:scale-110 transition"
           >

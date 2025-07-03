@@ -68,7 +68,7 @@ export default function Header() {
         } md:mt-0`}
       >
         {/* Navigation – Mobile */}
-        <nav className="flex flex-wrap justify-center gap-4 text-white text-lg sm:text-xl font-semibold">
+        <nav className="flex flex-col md:hidden gap-4 text-lg mb-4">
           <Link href="/" className="hover:underline hover:text-blue-300">
             الرئيسية
           </Link>

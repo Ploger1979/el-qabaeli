@@ -1,23 +1,26 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main dir="rtl" className="bg-white text-white min-h-screen font-cairo">
-      {/* صورة الترحيب */}
-      <section
-        className="relative bg-center bg-cover text-center"
-        style={{
-          backgroundImage: "url('/images/Orange-Auto.jpg')",
-          minHeight: "100vh",
-        }}
-      >
-        {/* العنوان */}
-        <div className="absolute top-10 w-full px-4 sm:px-8">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-black leading-relaxed">
+      {/* ✅ خلفية صورة بكامل الشاشة باستخدام <Image fill /> */}
+      <section className="relative w-full h-screen overflow-hidden">
+        <Image
+          src="/images/Orange-Auto.jpg"
+          alt="خلفية سيارة"
+          fill
+          priority
+          className="object-cover object-center"
+        />
+
+        {/* ✅ طبقة شفافة خفيفة لقراءة النص */}
+        <div className="absolute inset-0 bg-black/40 flex flex-col justify-between text-center px-4 pt-10 pb-10">
+          {/* العنوان */}
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-relaxed">
             ✨مرحباً بك في القبائلي لكماليات السيارات✨
           </h1>
-        </div>
 
-        {/* الفقرات */}
-        <div className="absolute bottom-10 w-full px-4 sm:px-10">
+          {/* الفقرات */}
           <div className="text-xl sm:text-2xl md:text-3xl text-white leading-loose space-y-4">
             <p>نحن وجهتك الأولى لتجهيز سيارتك بأفضل الإكسسوارات</p>
             <p>

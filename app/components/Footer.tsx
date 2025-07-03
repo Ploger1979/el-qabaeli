@@ -13,10 +13,10 @@ export default function Footer() {
       />
 
       {/* ✅ الطبقة الشفافة + الضبابية */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-10" />
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-10" />
 
       {/* ✅ المحتوى فوق الخلفية */}
-      <div className="relative z-20 max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="relative z-20 max-w-7xl mx-auto px-8 py-2 flex flex-col md:flex-row justify-between items-center gap-6">
         {/* 👈 التواصل الاجتماعي */}
         <div className="flex flex-col items-center md:items-start text-center md:text-right">
           <p className="text-2xl underline mb-2 self-center md:self-start ">تواصل معنا</p>

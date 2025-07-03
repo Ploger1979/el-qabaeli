@@ -34,11 +34,14 @@ export default function AboutPage() {
           </ul>
         </div>
 
-        <p className="text-3xl leading-relaxed">
+        <p className="text-3xl leading-relaxed text-center ">
           نحن لا نقدم خدمة فقط، بل نخلق تجربة ترضي العميل وتمنحه الثقة في كل
           زيارة.
           <br />
-          <strong>هدفنا بسيط وواضح: راحة العميل وجودة الخدمة.</strong>
+          <strong className="text-3xl leading-relaxed text-center blink-gold">
+            هدفنا بسيط وواضح
+            <br /> راحة العميل وجودة الخدمة
+          </strong>
         </p>
       </div>
     </main>

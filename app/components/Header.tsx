@@ -20,6 +20,9 @@ export default function Header() {
         <Link href="/products" className="hover:underline hover:text-blue-300">
           المنتجات
         </Link>
+        <Link href="/location" className="hover:underline hover:text-blue-300">
+          موقعنا
+        </Link>
       </nav>
 
       {/* اللوجو – في النص */}

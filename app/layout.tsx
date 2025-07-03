@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "موقع القبائلي",
+  title: "موقع القبايلي",
   description: "أفضل كماليات السيارات",
+  icons: {
+    icon: "/logo3.ico",
+  },
 };
 
 export default function RootLayout({

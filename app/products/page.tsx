@@ -6,7 +6,9 @@ export default function ProductsPage() {
     >
       {/* العنوان الرئيسي */}
       <section className="text-center mb-12">
-        <h1 className="text-6xl font-bold text-[#20438a] mb-4">منتجاتنا</h1>
+        <h1 className="text-6xl font-bold text-[#20438a] mb-4 underline">
+          منتجاتنا
+        </h1>
         <p className="text-3xl font-bold text-gray-700">
           اكتشف مجموعتنا المميزة من كماليات السيارات
         </p>

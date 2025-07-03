@@ -63,37 +63,28 @@ export default function Header() {
 
       {/* Mobile Navigation + Social */}
       <div
-        className={`flex-col md:flex-row md:flex justify-between items-center mt-4 ${
-          menuOpen ? "flex" : "hidden"
-        } md:mt-0`}
+        className={`flex-col md:flex-row md:flex justify-between items-center mt-4 ${menuOpen ? "flex" : "hidden"
+          } md:mt-0`}
       >
-        {/* Navigation – Mobile */}
-        <nav className="flex flex-col md:hidden gap-4 text-lg mb-4">
-          <Link href="/" className="hover:underline hover:text-blue-300">
+        {/* Navigation – Desktop */}
+        <nav className="hidden md:flex items-center gap-6 text-lg font-semibold h-12">
+          <Link href="/" className="flex items-center hover:underline hover:text-blue-300">
             الرئيسية
           </Link>
-          <Link href="/about" className="hover:underline hover:text-blue-300">
+          <Link href="/about" className="flex items-center hover:underline hover:text-blue-300">
             من نحن
           </Link>
-          <Link
-            href="/services"
-            className="hover:underline hover:text-blue-300"
-          >
+          <Link href="/services" className="flex items-center hover:underline hover:text-blue-300">
             الخدمات
           </Link>
-          <Link
-            href="/products"
-            className="hover:underline hover:text-blue-300"
-          >
+          <Link href="/products" className="flex items-center hover:underline hover:text-blue-300">
             المنتجات
           </Link>
-          <Link
-            href="/location"
-            className="hover:underline hover:text-blue-300"
-          >
+          <Link href="/location" className="flex items-center hover:underline hover:text-blue-300">
             موقعنا
           </Link>
         </nav>
+
 
         {/* Social Icons */}
         <div className="flex gap-2 justify-center text-xl">

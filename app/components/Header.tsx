@@ -13,36 +13,27 @@ export default function Header() {
       {/* ✅ Desktop Header */}
       <div className="hidden md:flex items-center justify-between">
         {/* اليمين: المنيو */}
-        <nav className="flex gap-6 text-lg font-semibold">
-          <Link href="/" className="hover:underline hover:text-blue-300">
-            الرئيسية
-          </Link>
-          <Link href="/about" className="hover:underline hover:text-blue-300">
-            من نحن
-          </Link>
-          <Link href="/services" className="hover:underline hover:text-blue-300">
-            الخدمات
-          </Link>
-          <Link href="/products" className="hover:underline hover:text-blue-300">
-            المنتجات
-          </Link>
-          <Link href="/location" className="hover:underline hover:text-blue-300">
-            موقعنا
-          </Link>
+        <nav className="flex gap-6 text-xl font-semibold">
+          <Link href="/" className="hover:underline hover:text-blue-300">الرئيسية</Link>
+          <Link href="/about" className="hover:underline hover:text-blue-300">من نحن</Link>
+          <Link href="/services" className="hover:underline hover:text-blue-300">الخدمات</Link>
+          <Link href="/products" className="hover:underline hover:text-blue-300">المنتجات</Link>
+          <Link href="/location" className="hover:underline hover:text-blue-300">موقعنا</Link>
         </nav>
 
-        {/* النص: اللوجو */}
-        <div className="flex-shrink-0">
+        {/* اللوجو في النص */}
+        <div className="relative w-180 h-50">
           <Image
             src="/images/Auto-logo-Photoroom.png"
             alt="القبائلي"
-            width={120}
-            height={40}
+            fill
             className="object-contain"
+            priority
           />
         </div>
 
-        {/* اليسار: سوشيال ميديا */}
+        {/* السوشيال ميديا */}
+        <p className="text-lg underline mb-2">تواصل معنا</p>
         <div className="flex gap-2 text-xl">
           <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
           <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
@@ -53,16 +44,14 @@ export default function Header() {
 
       {/* ✅ Mobile Header */}
       <div className="md:hidden flex justify-between items-center">
-        {/* اللوجو */}
-        <Image
-          src="/images/Auto-logo-Photoroom.png"
-          alt="القبائلي"
-          width={100}
-          height={40}
-          className="object-contain"
-        />
-
-        {/* زر المينيو */}
+        <div className="relative w-32 h-10">
+          <Image
+            src="/images/Auto-logo-Photoroom.png"
+            alt="القبائلي"
+            fill
+            className="object-contain"
+          />
+        </div>
         <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle Menu">
           {menuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
         </button>
@@ -80,7 +69,7 @@ export default function Header() {
             <Link href="/location" className="hover:underline hover:text-blue-300">موقعنا</Link>
           </nav>
 
-          {/* السوشيال */}
+          {/* سوشيال ميديا */}
           <div className="flex gap-3 text-xl">
             <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
             <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>

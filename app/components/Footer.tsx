@@ -19,75 +19,34 @@ export default function Footer() {
         <div>
           <p className="text-xl underline mb-2">تواصل معنا</p>
           <div className="flex justify-center md:justify-start gap-3 text-2xl">
-            <a
-              href="https://wa.me/218925881949"
-              target="_blank"
-              className="bg-green-500 p-2 rounded-full hover:scale-110 transition"
-            >
-              <FaWhatsapp />
-            </a>
-            <a
-              href="https://facebook.com/ayman.elamin.90"
-              target="_blank"
-              className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="https://www.tiktok.com/@alqabayli"
-              target="_blank"
-              className="bg-black p-2 rounded-full hover:scale-110 transition"
-            >
-              <FaTiktok />
-            </a>
-            <a
-              href="mailto:sskknnrr15@gmail.com"
-              className="bg-red-500 p-2 rounded-full hover:scale-110 transition"
-            >
-              <FaEnvelope />
-            </a>
+            <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
+            <a href="https://facebook.com/ayman.elamin.90" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
+            <a href="https://www.tiktok.com/@alqabayli" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 transition"><FaTiktok /></a>
+            <a href="mailto:sskknnrr15@gmail.com" className="bg-red-500 p-2 rounded-full hover:scale-110 transition"><FaEnvelope /></a>
           </div>
         </div>
 
-        {/* روابط */}
+        {/* روابط الصفحات */}
         <div className="flex flex-col gap-2 items-center">
-          <div className="flex flex-col sm:flex-row gap-4 text-lg font-semibold">
-            <Link href="/" className="hover:underline hover:text-[#000080]">
-              الرئيسية
-            </Link>
-            <Link
-              href="/about"
-              className="hover:underline hover:text-[#000080]"
-            >
-              من نحن
-            </Link>
-            <Link
-              href="/services"
-              className="hover:underline hover:text-[#000080]"
-            >
-              الخدمات
-            </Link>
-            <Link
-              href="/products"
-              className="hover:underline hover:text-[#000080]"
-            >
-              المنتجات
-            </Link>
-            <Link
-              href="/location"
-              className="hover:underline hover:text-[#000080]"
-            >
-              موقعنا
-            </Link>
+          <div className="flex flex-col sm:flex-row gap-4 text-xl font-semibold">
+            <Link href="/" className="hover:underline hover:text-[#000080]">الرئيسية</Link>
+            <Link href="/about" className="hover:underline hover:text-[#000080]">من نحن</Link>
+            <Link href="/services" className="hover:underline hover:text-[#000080]">الخدمات</Link>
+            <Link href="/products" className="hover:underline hover:text-[#000080]">المنتجات</Link>
+            <Link href="/location" className="hover:underline hover:text-[#000080]">موقعنا</Link>
           </div>
-          <Image
-            src="/images/Auto-logo-dunkelblau.png"
-            alt="Logo"
-            width={140}
-            height={40}
-            className="object-contain"
-          />
-          <p className="text-sm font-semibold">
+
+          <div className="relative w-180 h-50 ">
+            <Image
+              src="/images/Auto-logo-dunkelblau.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+
+          <p className="text-lg font-semibold mt-1">
             القبايلي – إكسسوارات تليق بسيارتك
           </p>
         </div>

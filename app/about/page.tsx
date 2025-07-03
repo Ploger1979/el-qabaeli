@@ -39,7 +39,7 @@ export default function AboutPage() {
           نحن لا نقدم خدمة فقط، بل نخلق تجربة ترضي العميل وتمنحه الثقة في كل
           زيارة.
           <br />
-          <strong className="text-[#ffcc00] block mt-4">
+          <strong className="text-[#ffcc00] block mt-4 blink-gold">
             هدفنا بسيط وواضح
             <br />
             راحة العميل وجودة الخدمة

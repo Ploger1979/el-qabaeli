@@ -33,7 +33,7 @@ export default function Header() {
         </div>
 
         {/* السوشيال ميديا */}
-        <p className="text-lg underline mb-2">تواصل معنا</p>
+        <p className="text-lg underline mb-1">تواصل معنا</p>
         <div className="flex gap-2 text-xl">
           <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
           <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>

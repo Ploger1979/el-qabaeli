@@ -24,6 +24,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -63,6 +64,7 @@
 .blink-gold {
   animation: blink-gold 1.5s infinite;
 }
+
 .blinking {
   animation: blink 1.5s infinite;
 }

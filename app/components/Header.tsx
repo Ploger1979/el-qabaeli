@@ -61,13 +61,13 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden mt-4 flex flex-col items-center gap-4">
           {/* المنيو */}
-          <nav className="flex flex-col gap-3 text-lg font-semibold">
-            <Link href="/" className="hover:underline hover:text-blue-300">الرئيسية</Link>
-            <Link href="/about" className="hover:underline hover:text-blue-300">من نحن</Link>
-            <Link href="/services" className="hover:underline hover:text-blue-300">الخدمات</Link>
-            <Link href="/products" className="hover:underline hover:text-blue-300">المنتجات</Link>
-            <Link href="/location" className="hover:underline hover:text-blue-300">موقعنا</Link>
-          </nav>
+          <div className="flex flex-col sm:flex-row gap-4 text-xl font-semibold">
+            <Link href="/" className="hover:underline hover:text-[#000080]">الرئيسية</Link>
+            <Link href="/about" className="hover:underline hover:text-[#000080]">من نحن</Link>
+            <Link href="/services" className="hover:underline hover:text-[#000080]">الخدمات</Link>
+            <Link href="/products" className="hover:underline hover:text-[#000080]">المنتجات</Link>
+            <Link href="/location" className="hover:underline hover:text-[#000080]">موقعنا</Link>
+          </div>
 
           {/* سوشيال ميديا */}
           <div className="flex gap-3 text-xl">

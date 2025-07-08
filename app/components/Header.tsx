@@ -19,6 +19,7 @@ export default function Header() {
           <Link href="/services" className="hover:underline hover:text-blue-300">الخدمات</Link>
           <Link href="/products" className="hover:underline hover:text-blue-300">المنتجات</Link>
           <Link href="/location" className="hover:underline hover:text-blue-300">موقعنا</Link>
+          <Link href="/cart" className="hover:underline hover:text-blue-300">🛒 السلة</Link>
         </nav>
 
         {/* اللوجو في النص */}
@@ -67,10 +68,12 @@ export default function Header() {
             <Link href="/services" className="hover:underline hover:text-[#000080]">الخدمات</Link>
             <Link href="/products" className="hover:underline hover:text-[#000080]">المنتجات</Link>
             <Link href="/location" className="hover:underline hover:text-[#000080]">موقعنا</Link>
+            <Link href="/cart" className="hover:underline hover:text-[#000080]">🛒 السلة</Link>
           </div>
 
           {/* سوشيال ميديا */}
           <div className="flex gap-3 text-xl">
+            <p className="text-lg underline mb-1">تواصل معنا</p>
             <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
             <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
             <a href="https://www.tiktok.com/@sliman.kelane" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 transition"><FaTiktok /></a>

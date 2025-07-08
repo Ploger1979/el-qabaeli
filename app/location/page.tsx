@@ -8,7 +8,7 @@ export default function LocationPage() {
         موقعنا
       </h1>
 
-      <section className="max-w-4xl mx-auto bg-white/90 rounded-xl p-6 md:p-10 shadow-xl text-2xl border hover:border-[#000080] transition-all duration-300">
+      <section className="max-w-4xl mx-auto bg-white/90 rounded-xl p-6 md:p-10 shadow-xl text-2xl hover:scale-[1.02] transition-transform duration-300 border-1 border-transparent duration-300 hover:border-[#000080]">
         <div className="mb-8">
           <p className="text-3xl font-bold mb-4 text-[#000080]">العنوان:</p>
           <p className="leading-relaxed text-xl md:text-2xl text-gray-800 font-semibold">

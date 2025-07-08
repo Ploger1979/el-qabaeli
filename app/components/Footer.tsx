@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="relative z-10 overflow-hidden text-white">
       {/* خلفية */}
       <img
-        src="/images/motagat/autos-marken-min.png"
+        src="/images/montagat/autos-marken-min.png"
         alt="background"
         className="absolute inset-0 w-full h-full object-cover z-0"
       />
@@ -34,6 +34,7 @@ export default function Footer() {
             <Link href="/services" className="hover:underline hover:text-[#000080]">الخدمات</Link>
             <Link href="/products" className="hover:underline hover:text-[#000080]">المنتجات</Link>
             <Link href="/location" className="hover:underline hover:text-[#000080]">موقعنا</Link>
+            <Link href="/cart" className="hover:underline hover:text-[#000080]">🛒 السلة</Link>
           </div>
 
           <div className="relative w-180 h-50 ">

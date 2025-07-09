@@ -1007,7 +1007,7 @@ export default function ProductsPage() {
                     {/* ✅ الرسالة تظهر فقط لهذا المنتج */}
                     {addedProductId === product.id && (
                       <div className="text-green-600 font-semibold mt-2">
-                        ✅ تم إضافة المنتج إلى السلة
+                        ✅ 🛒تم إضافة المنتج إلى السلة
                       </div>
                     )}
                   </div>

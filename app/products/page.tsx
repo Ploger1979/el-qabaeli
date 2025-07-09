@@ -1,11 +1,11 @@
 "use client";
-
+import { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { products } from "./products-data";
 
 export default function ProductsPage() {
   const { addToCart } = useCart();
-
+  const [addedProductId, setAddedProductId] = useState<number | null>(null);
   return (
     <main dir="rtl" className="bg-white text-black font-cairo min-h-screen px-4 sm:px-6 py-10">
       <section className="text-center mb-12">
@@ -845,7 +845,7 @@ export default function ProductsPage() {
                   • وصلة طويلة تسهّل الوصول للإطارات الأربعة<br />
                 </p>
                 <p className="text-xl text-red-600 font-bold mb-2  text-center">
-                  💰 السعر: {" "} 
+                  💰 السعر: {" "}
                 </p>
 
                 {/* ✅ عرض الأزرار مع إضافة مباشرة للسلة حسب كل نوع */}
@@ -860,8 +860,8 @@ export default function ProductsPage() {
                         image: "",
                       })
                     }
-                    
-                    
+
+
                     className="bg-[#000080] text-white px-6 py-2 rounded hover:bg-blue-800 transition text-base font-semibold w-[180px] text-center shadow-md"
                   >
 
@@ -943,39 +943,8 @@ export default function ProductsPage() {
                   • مقاس يناسب أغلب السيارات: 145×110 سم أو 125×65 سم<br />
                   • شكل أنيق ولون مميز يضيف لمسة جمالية لواجهة السيارة
                 </p>
-
-
-
-
               </>
             )}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             {/* ✅ عرض مخصص لبعض المنتجات اللي ليها Variants (مثل 32، 33) */}
@@ -1023,18 +992,28 @@ export default function ProductsPage() {
 
                 {/* ✅ زر عادي لإضافة للسلة */}
                 {product.id !== 17 && (
-                  <div className="flex justify-center">
+                  <div className="flex flex-col items-center">
                     <button
-                      onClick={() => addToCart({ ...product, image: product.image! })}
-                      className="bg-[#000080] text-white px-6 py-2 rounded hover:bg-blue-800 transition text-base font-semibold w-[180px] text-center shadow-md"
+                      onClick={() => {
+                        addToCart({ ...product, image: product.image! });
+                        setAddedProductId(product.id);
+                        setTimeout(() => setAddedProductId(null), 2000);
+                      }}
+                      className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full"
                     >
                       أضف إلى السلة
                     </button>
+
+                    {/* ✅ الرسالة تظهر فقط لهذا المنتج */}
+                    {addedProductId === product.id && (
+                      <div className="text-green-600 font-semibold mt-2">
+                        ✅ تم إضافة المنتج إلى السلة
+                      </div>
+                    )}
                   </div>
                 )}
               </>
             )}
-
           </div>
         ))}
       </section>

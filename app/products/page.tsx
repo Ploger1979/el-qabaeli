@@ -398,6 +398,7 @@ export default function ProductsPage() {
             )}
             {product.id === 17 && (
               <>
+                {/* ✅ صور المنتج */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                   <img
                     src="/images/montagat/floor-mat-darkbrown.jpg"
@@ -411,17 +412,20 @@ export default function ProductsPage() {
                   />
                 </div>
 
+                {/* ✅ العنوان */}
                 <h2 className="text-2xl font-bold mb-4 text-pink-700 text-center">
                   فرش أرضية فاخر بالكامل بلونين <br />
-                  <span className="text-[#20438a]">Dark Brown</span>  <br />او  {" "}
+                  <span className="text-[#20438a]">Dark Brown</span> <br />او{" "}
                   <span className="text-[#20438a]"> Light Beige</span>
                 </h2>
 
+                {/* ✅ الوصف */}
                 <p className="text-lg text-black-700 leading-relaxed mb-4">
                   طقم فرش فاخر يغطي الأرضية بالكامل بتصميم 5D أنيق ومتين.
                   مصنوع من جلد صناعي عالي الجودة، مقاوم للماء والغبار والانزلاق، ويضيف لمسة راقية لمقصورة سيارتك.
                 </p>
 
+                {/* ✅ المميزات */}
                 <p className="text-md text-black-600 mb-4 leading-relaxed">
                   <strong>المميزات:</strong><br />
                   • تغطية شاملة للكراسي الأمامية والخلفية + القطعة الوسطى<br />
@@ -431,27 +435,41 @@ export default function ProductsPage() {
                   • سهل التركيب والفك – بدون أدوات
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                {/* ✅ السعر قبل الأزرار */}
+                <p className="text-xl text-red-600 font-bold mb-2 text-center">
+                  💰 السعر: 120 د.ل
+                </p>
+
+                {/* ✅ الأزرار */}
+                <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
                   <button
                     onClick={() =>
-                      addToCart({ ...product, image: "/images/montagat/floor-mat-darkbrown.jpg" })
+                      addToCart({
+                        ...product,
+                        image: "/images/montagat/floor-mat-darkbrown.jpg",
+                      })
                     }
-                    className="bg-[#5a3212] text-white px-4 py-2 rounded hover:bg-[#3e210b] transition w-full sm:w-auto"
+                    className="bg-[#5a3212] text-white px-6 py-2 rounded hover:bg-[#3e210b] transition text-base font-semibold w-[180px] text-center shadow-md"
                   >
-                    أضف البني الغامق (Dark Brown) إلى السلة
+                    أضف البني الغامق (Dark Brown)
                   </button>
 
                   <button
                     onClick={() =>
-                      addToCart({ ...product, image: "/images/montagat/floor-mat-lightbeige.jpg" })
+                      addToCart({
+                        ...product,
+                        image: "/images/montagat/floor-mat-lightbeige.jpg",
+                      })
                     }
-                    className="bg-[#c6b394] text-white px-4 py-2 rounded hover:bg-[#aa977b] transition w-full sm:w-auto"
+                    className="bg-[#c6b394] text-white px-6 py-2 rounded hover:bg-[#aa977b] transition text-base font-semibold w-[180px] text-center shadow-md"
                   >
-                    أضف البيج الفاتح (Light Beige) إلى السلة
+                    أضف البيج الفاتح (Light Beige)
                   </button>
                 </div>
+
               </>
             )}
+
             {product.id === 18 && (
               <>
                 <h2 className="text-2xl font-bold mb-2 text-pink-700">
@@ -718,9 +736,13 @@ export default function ProductsPage() {
                 </h2>
 
                 <p className="text-lg text-black-700 leading-relaxed mb-4">
-                  <br /> ثلاجة إلكترونية محمولة مصممة للاستخدام في السيارة، الرحلات أو المكاتب .<div className="br"></div>
+                  <br />
+                  ثلاجة إلكترونية محمولة مصممة للاستخدام في السيارة، الرحلات أو المكاتب .
+                </p>
+                <p className="text-lg text-black-700 leading-relaxed mb-4">
                   توفر تبريد أو تسخين حسب الحاجة، بسعة 7.5 لتر تكفي للمشروبات، الفواكه أو حتى الوجبات الخفيفة.
                 </p>
+
 
                 <p className="text-md text-black-600 mb-4 leading-relaxed">
                   <strong>المميزات:</strong><br />
@@ -802,74 +824,215 @@ export default function ProductsPage() {
                 </p>
               </>
             )}
+            {product.id === 33 && (
+              <>
+                <h2 className="text-2xl font-bold mb-2 text-pink-700">
+                  كمبروسر هواء للسيارة<br />
+                  <span className="text-[#20438a]">بمكبس واحد أو مكبسين</span>
+                </h2>
+
+                <p className="text-lg text-black-700 leading-relaxed mb-4">
+                  كمبروسر قوي لنفخ إطارات السيارة بسرعة وكفاءة. متوفر بنوعين:
+                  <strong> <br />1 بسطون </strong> مناسب للاستخدام البسيط،
+                  و<strong> 2 بسطون </strong> بقوة أكبر للإطارات الكبيرة.
+                </p>
+
+                <p className="text-md text-black-600 mb-4 leading-relaxed">
+                  <strong>المميزات:</strong><br />
+                  • محرك قوي يعمل على ولاعة السيارة 12V<br />
+                  • عداد ضغط هواء مدمج لقراءة دقيقة<br />
+                  • جسم معدني متين ومقاوم للحرارة<br />
+                  • وصلة طويلة تسهّل الوصول للإطارات الأربعة<br />
+                </p>
+                <p className="text-xl text-red-600 font-bold mb-2  text-center">
+                  💰 السعر: {" "} 
+                </p>
+
+                {/* ✅ عرض الأزرار مع إضافة مباشرة للسلة حسب كل نوع */}
+                <div className="flex flex-col sm:flex-row gap-4 mt-4 justify-center">
+                  <button
+                    onClick={() =>
+                      addToCart({
+                        id: 331, // رقم مميز
+                        name: "كمبروسر هواء - 1 بسطون",
+                        price: 80,
+                        quantity: 1,
+                        image: "",
+                      })
+                    }
+                    
+                    
+                    className="bg-[#000080] text-white px-6 py-2 rounded hover:bg-blue-800 transition text-base font-semibold w-[180px] text-center shadow-md"
+                  >
+
+                    1 بسطون – 80 د.ل
+                  </button>
+
+                  <button
+
+                    onClick={() =>
+                      addToCart({
+                        id: 332, // رقم مميز آخر
+                        name: "كمبروسر هواء - 2 بسطون",
+                        price: 120,
+                        quantity: 1,
+                        image: "",
+                      })
+                    }
+                    className="bg-[#000080] text-white px-6 py-2 rounded hover:bg-blue-800 transition text-base font-semibold w-[180px] text-center shadow-md"
+                  >
+                    2 بسطون – 120 د.ل
+                  </button>
+                </div>
+              </>
+            )
+            }
+            {product.id === 34 && (
+              <>
+
+
+                {/* ✅ الصور: 3 فوق + 2 تحت متساويين */}
+                <div className="flex flex-col gap-3 mb-4">
+                  {/* ✅ الصف الأول: 3 صور */}
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <img
+                      src="/images/montagat/sunshade1.jpg"
+                      alt="صورة 1"
+                      className="rounded w-full h-auto object-cover"
+                    />
+                    <img
+                      src="/images/montagat/sunshade3.jpg"
+                      alt="صورة 2"
+                      className="rounded w-full h-auto object-cover"
+                    />
+                    <img
+                      src="/images/montagat/sunshade2.jpg"
+                      alt="صورة 3"
+                      className="rounded w-full h-auto object-cover"
+                    />
+                  </div>
+
+                  {/* ✅ الصف الثاني: صورتين فقط – كل واحدة تأخذ نصف العرض */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <img
+                      src="/images/montagat/sunshade4.jpg"
+                      alt="صورة 4"
+                      className="rounded w-full h-auto object-cover"
+                    />
+                    <img
+                      src="/images/montagat/sunshade5.jpg"
+                      alt="صورة 5"
+                      className="rounded w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+                <h2 className="text-2xl font-bold mb-2 text-pink-700">
+                  ستارة أمامية عازلة للشمس <br />
+                  <span className="text-[#20438a]">حماية متكاملة لزجاج السيارة الأمامي</span>
+                </h2>
+                <p className="text-lg text-black-700 leading-relaxed mb-4">
+                  ستارة أمامية مميزة لحماية الزجاج الأمامي من أشعة الشمس الحارقة، تقلل من حرارة السيارة وتحمي التابلوه من التلف والتشققات.
+                  مصنوعة من خامة عاكسة مقاومة للحرارة، سهلة الطي والتركيب، وتتوفر بمقاسين يناسبان أغلب أنواع السيارات.
+                </p>
+
+                <p className="text-md text-black-600 mb-4 leading-relaxed">
+                  <strong>المميزات:</strong><br />
+                  • خامة عازلة للحرارة تعكس أشعة الشمس وتقلل من حرارة المقصورة الداخلية<br />
+                  • تصميم قابل للطي – يشبه المظلة لتسهيل التخزين<br />
+                  • تثبيت سهل باستخدام الأربطة الجانبية<br />
+                  • مقاس يناسب أغلب السيارات: 145×110 سم أو 125×65 سم<br />
+                  • شكل أنيق ولون مميز يضيف لمسة جمالية لواجهة السيارة
+                </p>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* ✅ السعر */}
-            {product.id === 32 ? (
-              <div className="text-xl text-red-600 font-bold mb-2">
-                💰 السعر: من 120 حتى 160 د.ل حسب المقاس
-              </div>
-            ) : (
-              <p className="text-xl text-red-600 font-bold mb-2">
-                السعر: {product.price} د.ل{" "}
-                {product.id === 4 && (
-                  <span className="text-[#20438a]">(لكل عبوة)</span>
-                )}
-              </p>
+              </>
             )}
 
 
 
-            {/* ✅ زر الإضافة */}
-            {product.variantButtons ? (
-              <div className="flex flex-col sm:flex-row gap-4">
-                {product.variantButtons.map((variant, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => addToCart({
-                      ...product,
-                      image: variant.image,
-                      price: variant.price ?? product.price,
-                      id: parseInt(`${product.id}${variant.variantKey}`.replace(/\D/g, '')) // ✅ توليد ID مختلف
-                    })
-                    }
-                    className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full sm:w-auto"
-                  >
-                    {variant.label}
-                  </button>
-                ))}
-              </div>
-            ) : product.id !== 17 && (
-              <button
-                onClick={() => addToCart({ ...product, image: product.image! })}
-                className="bg-[#000080] text-white px-4 py-2 rounded hover:bg-blue-800 transition w-full"
-              >
-                أضف إلى السلة
-              </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* ✅ عرض مخصص لبعض المنتجات اللي ليها Variants (مثل 32، 33) */}
+            {[32, 33].includes(product.id) ? (
+              <>
+                {/* ✅ عرض سعر خاص لو المنتج 32 */}
+                {product.id === 32 && (
+                  <p className="text-xl text-red-600 font-bold mb-2 text-center">
+                    💰 السعر: من 120 حتى 160 د.ل حسب المقاس
+                  </p>
+                )}
+
+                {/* ✅ زرّين في وسط الكرت بشكل احترافي */}
+                <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
+                  {product.variantButtons?.map((variant, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() =>
+                        addToCart({
+                          ...product,
+                          image: variant.image,
+                          price: variant.price ?? product.price,
+                          id: parseInt(`${product.id}${idx}`), // ID مميز للتمييز بين الأنواع
+                          name: `${product.name || "منتج"} - ${variant.label}`
+                        })
+                      }
+                      className="bg-[#000080] text-white px-6 py-2 rounded hover:bg-blue-800 transition text-base font-semibold w-[180px] text-center shadow-md"
+                    >
+                      {variant.label}
+                    </button>
+                  ))}
+                </div>
+              </>
+            ) : (
+              <>
+                {/* ✅ السعر العادي لباقي المنتجات */}
+                {product.id !== 17 && (
+                  <p className="text-xl text-red-600 font-bold mb-2  text-center">
+                    💰 السعر: {product.price} د.ل{" "}
+                    {product.id === 4 && (
+                      <span className="text-[#20438a]">(لكل عبوة)</span>
+                    )}
+                  </p>
+                )}
+
+                {/* ✅ زر عادي لإضافة للسلة */}
+                {product.id !== 17 && (
+                  <div className="flex justify-center">
+                    <button
+                      onClick={() => addToCart({ ...product, image: product.image! })}
+                      className="bg-[#000080] text-white px-6 py-2 rounded hover:bg-blue-800 transition text-base font-semibold w-[180px] text-center shadow-md"
+                    >
+                      أضف إلى السلة
+                    </button>
+                  </div>
+                )}
+              </>
             )}
 
           </div>

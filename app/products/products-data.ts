@@ -345,7 +345,31 @@ export type ProductType = {
           image: "/images/montagat/car-cover-black.jpg"
         }
       ]
+    },{
+      id: 33,
+      name: "",
+      price: 80, // السعر الابتدائي
+      quantity: 1,
+      images: [
+        "/images/montagat/air-compressor-1piston.jpg",
+        "/images/montagat/air-compressor-2piston.jpg"
+      ],
+      description: "",
+      variantButtons: [
+       
+      ]
+    },{
+      id: 34,
+      name: "",
+      price: 45,
+      quantity: 1,
+      images: [
+        
+      ],
+      description: ""
     }
+    
+    
     
     
     

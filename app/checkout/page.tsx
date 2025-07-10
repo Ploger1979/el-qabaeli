@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 export default function CheckoutPage() {
   const { cart } = useCart();
-  const [paymentMethod, setPaymentMethod] = useState<"paypal" | "bank" | null>(null);
+  const [paymentMethod, setPaymentMethod] = useState<"bank" | "wallet" | null>(null);
   const router = useRouter();
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
@@ -16,35 +16,24 @@ export default function CheckoutPage() {
       return;
     }
 
-    if (paymentMethod === "paypal") {
-      // ✅ إرسال البيانات يدويًا بـ fetch إلى Formspree
-      await fetch("https://formspree.io/f/mgvybdwn", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams({
-          payment_method: "PayPal",
-          total: `${total} د.ل`,
-          order_details: cart.map((item) => `${item.name} × ${item.quantity}`).join(" | "),
-          message: "يرجى التواصل معنا لإتمام إجراءات التسليم. هناك مصاريف شحن تختلف حسب المنطقة (بـنغازي / خارجها).",
-          email: "aymanploger@gmail.com",
-        }).toString(),
-      });
+    let message = "";
 
-      // ✅ إعادة التوجيه للصفحة المخصصة
-      router.push("/thanks");
-    } else if (paymentMethod === "bank") {
-      const message = `السلام عليكم، لقد قمت بتحويل ${total} د.ل إلى حساب:
+    if (paymentMethod === "bank") {
+      message = `السلام عليكم، لقد قمت بتحويل ${total} د.ل إلى الحساب البنكي:
 سليمان كيلانى حماد إبراهيم القبايلى
 مصرف التجارة والتنمية
 رقم الحساب: 0013142371001
 
 يرجى مراجعة الحوالة.`;
-      const whatsappURL = `https://wa.me/218925881949?text=${encodeURIComponent(message)}`;
-      window.open(whatsappURL, "_blank");
+    } else if (paymentMethod === "wallet") {
+      message = `السلام عليكم، تم دفع ${total} د.ل باستخدام خدمة BCD Wallet.
+رقم المستخدم: SU142371
+
+يرجى تأكيد استلام المبلغ وشكرًا.`;
     }
+
+    const whatsappURL = `https://wa.me/218925881949?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
   };
 
   return (
@@ -64,20 +53,27 @@ export default function CheckoutPage() {
         💰 الإجمالي: <span className="text-red-600">{total} د.ل</span>
       </p>
 
-      {/* ✅ اختيار طريقة الدفع */}
       <div className="mt-10 flex flex-col items-center justify-center text-center">
         <p className="text-3xl font-semibold text-[#20438a] mb-4 underline">طريقة الدفع</p>
 
-        <div className="flex gap-6">
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* التحويل البنكي */}
           <button
             onClick={() => setPaymentMethod("bank")}
-            className={`p-3 w-32 h-20 border rounded-xl flex items-center justify-center transform transition duration-300 hover:scale-110 ${paymentMethod === "bank" ? "border-blue-600 shadow-lg" : "border-gray-300"
+            className={`p-3 w-36 h-20 border rounded-xl flex items-center justify-center transition hover:scale-110 ${paymentMethod === "bank" ? "border-blue-600 shadow-lg" : "border-gray-300"
               }`}
           >
-            <img src="/images/tejara-bank.png" alt="Tejara Bank" className="h-10 object-contain" />
+            <img src="/images/tejara-bank.png" alt="Bank Transfer" className="h-12 object-contain" />
           </button>
 
-          
+          {/* محفظة BCD */}
+          <button
+            onClick={() => setPaymentMethod("wallet")}
+            className={`p-3 w-36 h-20 border rounded-xl flex items-center justify-center transition hover:scale-110 ${paymentMethod === "wallet" ? "border-blue-600 shadow-lg" : "border-gray-300"
+              }`}
+          >
+            <img src="/images/bcd-digital.png" alt="BCD Wallet" className="h-12 object-contain" />
+          </button>
         </div>
       </div>
 
@@ -86,15 +82,12 @@ export default function CheckoutPage() {
           type="button"
           onClick={handleConfirm}
           disabled={!paymentMethod}
-          className={`
-      px-12 py-3 text-white text-xl font-bold rounded-md shadow-lg border transition duration-300
-      ${paymentMethod ? "bg-green-600 hover:bg-green-700" : "bg-gray-400 cursor-not-allowed"}
-    `}
+          className={`px-12 py-3 text-white text-xl font-bold rounded-md shadow-lg border transition duration-300 ${paymentMethod ? "bg-green-600 hover:bg-green-700" : "bg-gray-400 cursor-not-allowed"
+            }`}
         >
           تأكيد الدفع
         </button>
       </div>
-
     </main>
   );
 }

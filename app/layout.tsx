@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "القبايلي – أفضل إكسسوارات السيارات في ليبيا",
   description:
-    "الموقع الرسمي للقبائلي – كماليات سيارات عالية الجودة، توصيل سريع داخل وخارج بنغازي، خدمة عملاء ممتازة، وطرق دفع متعددة.",
+    "الموقع الرسمي للقبايلي – كماليات سيارات عالية الجودة، توصيل سريع داخل وخارج بنغازي، خدمة عملاء ممتازة، وطرق دفع متعددة.",
   keywords: [
     "اكسسوارات سيارات",
     "القبايلي",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   themeColor: "#000080",
   icons: {
-    icon: "/logo3.ico",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "القبايلي – إكسسوارات سيارات فاخرة في ليبيا",

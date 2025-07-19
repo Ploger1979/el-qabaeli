@@ -37,7 +37,6 @@ export const metadata: Metadata = {
   applicationName: "القبايلي",
   referrer: "origin-when-cross-origin",
   robots: "index, follow",
-  themeColor: "#000080",
   icons: {
     icon: "/favicon.ico",
   },
@@ -59,6 +58,11 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+export const viewport = {
+  themeColor: "#000080",
+};
+
 
 
 export default function RootLayout({

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://el-qabaeli.netlify.app
+
+# Sitemaps
+Sitemap: https://el-qabaeli.netlify.app/sitemap.xml

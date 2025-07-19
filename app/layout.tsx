@@ -16,12 +16,50 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "موقع القبايلي",
-  description: "أفضل كماليات السيارات",
+  title: "القبايلي – أفضل إكسسوارات السيارات في ليبيا",
+  description:
+    "الموقع الرسمي للقبائلي – كماليات سيارات عالية الجودة، توصيل سريع داخل وخارج بنغازي، خدمة عملاء ممتازة، وطرق دفع متعددة.",
+  keywords: [
+    "اكسسوارات سيارات",
+    "القبايلي",
+    "كماليات سيارات ليبيا",
+    "قطع غيار",
+    "سيارات",
+    "بنغازي",
+    "اكسسوارات ليبيا",
+    "تلميع سيارات",
+    "مستلزمات السيارات",
+    "فرش سيارات",
+    "غطاء مقاعد",
+  ],
+  authors: [{ name: "Ayman Plöger", url: "https://el-qabaeli.netlify.app" }],
+  generator: "Next.js",
+  applicationName: "القبايلي",
+  referrer: "origin-when-cross-origin",
+  robots: "index, follow",
+  themeColor: "#000080",
   icons: {
     icon: "/logo3.ico",
   },
+  openGraph: {
+    title: "القبايلي – إكسسوارات سيارات فاخرة في ليبيا",
+    description:
+      "استعرض أجود كماليات السيارات من القبايلي، مع توصيل داخل وخارج بنغازي، وخدمة عملاء احترافية.",
+    url: "https://el-qabaeli.netlify.app",
+    siteName: "القبايلي",
+    images: [
+      {
+        url: "/images/opengraph-preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "صورة لموقع القبايلي",
+      },
+    ],
+    locale: "ar_LY",
+    type: "website",
+  },
 };
+
 
 export default function RootLayout({
   children,
@@ -30,10 +68,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <CartProvider> {/* ✅ دي الإضافة المهمة */}
+      <head>
+        {/* ✅ إضافات SEO مهمة */}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="Ds6QVP7YvM1-yCTjcXALMzLCYw3LZGmrq4sh28y3AdA" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <CartProvider>
           <Header />
           {children}
           <Footer />

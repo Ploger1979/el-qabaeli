@@ -77,6 +77,8 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google-site-verification" content="Ds6QVP7YvM1-yCTjcXALMzLCYw3LZGmrq4sh28y3AdA" />
+        {/* ✅ حل مباشر لأيقونة favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <CartProvider>

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://el-qabaeli.netlify.app
+Host: https://el-qabaeli.com
 
 # Sitemaps
-Sitemap: https://el-qabaeli.netlify.app/sitemap.xml
+Sitemap: https://el-qabaeli.com/sitemap.xml

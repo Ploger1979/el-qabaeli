@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "فرش سيارات",
     "غطاء مقاعد",
   ],
-  authors: [{ name: "Ayman Plöger", url: "https://el-qabaeli.netlify.app" }],
+  authors: [{ name: "Ayman Plöger", url: "https://el-qabaeli.com" }],
   generator: "Next.js",
   applicationName: "القبايلي",
   referrer: "origin-when-cross-origin",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     title: "القبايلي – إكسسوارات سيارات فاخرة في ليبيا",
     description:
       "استعرض أجود كماليات السيارات من القبايلي، مع توصيل داخل وخارج بنغازي، وخدمة عملاء احترافية.",
-    url: "https://el-qabaeli.netlify.app",
+    url: "https://el-qabaeli.com",
     siteName: "القبايلي",
     images: [
       {

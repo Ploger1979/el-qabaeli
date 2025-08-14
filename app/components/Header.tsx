@@ -81,7 +81,7 @@ export default function Header() {
               <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaWhatsapp /></a>
               <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaFacebookF /></a>
               <a href="https://www.tiktok.com/@sliman.kelane" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaTiktok /></a>
-              <a href="mailto:sskknnrr15@gmail.com" className="bg-red-500 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaEnvelope /></a>
+              <a href="mailto:info@el-qabaeli.com" className="bg-red-500 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaEnvelope /></a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Header() {
                 <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaWhatsapp /></a>
                 <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaFacebookF /></a>
                 <a href="https://www.tiktok.com/@sliman.kelane" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaTiktok /></a>
-                <a href="mailto:sskknnrr15@gmail.com" className="bg-red-500 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaEnvelope /></a>
+                <a href="mailto:info@el-qabaeli.com" className="bg-red-500 p-2 rounded-full hover:scale-110 hover:rotate-3 transition"><FaEnvelope /></a>
               </div>
             </div>
           </div>

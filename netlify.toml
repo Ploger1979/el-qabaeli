@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://el-qabaeli.netlify.app/*"
+  to = "https://el-qabaeli.com/:splat"
+  status = 301
+  force = true

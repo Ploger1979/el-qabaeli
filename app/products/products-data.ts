@@ -76,7 +76,6 @@ export type ProductType = {
       quantity: 1,
       image: "/images/montagat/seat_cover_beige_red.jpg",
       description: "",
-     
     },
     {
       id: 8,
@@ -85,7 +84,6 @@ export type ProductType = {
       quantity: 1,
       image: "/images/montagat/seat_cover_fabric_beige.jpg",
       description: "",
-
     },
     {
       id: 9,
@@ -102,7 +100,6 @@ export type ProductType = {
       quantity: 1,
       image: "/images/montagat/seat_cover_leather_brown_black.jpg",
       description: ""
-      
     },
     {
       id: 11,
@@ -111,7 +108,6 @@ export type ProductType = {
       quantity: 1,
       image: "/images/montagat/copper-leather-seat-cover.jpg",
       description: "",
-
     },
     {
         id: 12,
@@ -120,7 +116,6 @@ export type ProductType = {
         quantity: 1,
         image: "/images/montagat/car-curtain.jpg",
         description: "",
-      
     },
     { 
         id: 13,
@@ -368,11 +363,6 @@ export type ProductType = {
       ],
       description: ""
     }
-    
-    
-    
-    
-    
-    
+ 
   ];
   

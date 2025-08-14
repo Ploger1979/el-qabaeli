@@ -1,12 +1,71 @@
-"use client";
+
 import { useState } from "react";
 import { useCart } from "../context/CartContext";
 import { products } from "./products-data";
+
+export const metadata = {
+  title: "منتجات القبايلي – إكسسوارات سيارات مميزة في ليبيا",
+  description:
+    "استعرض مجموعة واسعة من منتجات القبايلي المخصصة للسيارات – جودة عالية، أسعار مناسبة، توصيل سريع داخل وخارج بنغازي.",
+  keywords: [
+    "اكسسوارات سيارات",
+    "منتجات القبايلي",
+    "كماليات سيارات",
+    "فرش سيارات",
+    "قطع غيار سيارات",
+    "بنغازي",
+    "ليبيا",
+  ],
+  openGraph: {
+    title: "منتجات القبايلي – أفضل الإكسسوارات للسيارات",
+    description:
+      "جميع كماليات السيارات التي تبحث عنها تجدها لدى القبايلي – الجودة والثقة في منتج واحد.",
+    url: "https://el-qabaeli.com/products",
+    siteName: "القبايلي",
+    images: [
+      {
+        url: "/images/opengraph-products.jpg", // ✳️ ضع هنا صورة مناسبة لمنتجاتك
+        width: 1200,
+        height: 630,
+        alt: "منتجات القبايلي",
+      },
+    ],
+    locale: "ar_LY",
+    type: "website",
+  },
+};
+
 
 export default function ProductsPage() {
   const { addToCart } = useCart();
   const [addedProductId, setAddedProductId] = useState<number | null>(null);
   return (
+    <>
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Store",
+              "name": "القبايلي",
+              "url": "https://el-qabaeli.com/products",
+              "image": "https://el-qabaeli.com/images/opengraph-products.jpg",
+              "description":
+                "اكسسوارات سيارات عالية الجودة – كماليات، فرش، تغطيات، قطع غيار.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "بنغازي",
+                "addressCountry": "LY",
+              },
+              "sameAs": [
+                "https://www.facebook.com/alqabaeli",
+                "https://www.instagram.com/alqabaeli",
+              ],
+            }),
+          }}
+        />
+      </Head>
     <main dir="rtl" className="bg-white text-black font-cairo min-h-screen px-4 sm:px-6 py-10">
       <section className="text-center mb-12">
         <h1 className="text-4xl sm:text-5xl font-bold text-[#20438a] mb-4 underline">
@@ -1018,5 +1077,6 @@ export default function ProductsPage() {
         ))}
       </section>
     </main>
+  </>
   );
 }

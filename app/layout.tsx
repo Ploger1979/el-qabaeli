@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { CartProvider } from "./context/CartContext"; // ✅ أضفنا الـ Context هنا
+import { CartProvider } from "./context/CartContext"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 
 export const metadata: Metadata = {
   title: "القبايلي – أفضل إكسسوارات السيارات في ليبيا",

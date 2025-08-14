@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 
 // استدعاء Client Component بشكل ديناميكي
-const ProductsClient = dynamic(() => import("./ProductsClient"), { ssr: false });
+const ProductsClient = dynamic(() => import("./ProductsClient"));
 
 export const metadata = {
   title: "منتجات القبايلي – إكسسوارات سيارات مميزة في ليبيا",

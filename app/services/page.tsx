@@ -4,7 +4,7 @@ export default function ServicesPage() {
       dir="rtl"
       className="relative min-h-screen text-white font-cairo"
       style={{
-        backgroundImage: "url('/images/ayman-1.png')",
+        backgroundImage: "url('/images/WebP2/ayman-1.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

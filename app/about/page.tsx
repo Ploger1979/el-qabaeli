@@ -37,7 +37,7 @@ export default function AboutPage() {
       className="bg-cover bg-center text-white min-h-screen px-4 sm:px-6 py-10 font-cairo"
       style={{
         backgroundImage:
-          "url('/images/schneider_autohaus_innen_aussen_bearbeitet-1-7.jpg')",
+          "url('/images/WebP2/About-Uns.webp')",
       }}
     >
       {/* طبقة سوداء شفافة لتوضيح النص */}

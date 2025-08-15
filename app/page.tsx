@@ -5,7 +5,7 @@ export default function Home() {
     <main dir="rtl" className="bg-white text-white min-h-screen font-cairo">
       <section className="relative w-full h-screen overflow-hidden">
         <Image
-          src="/images/Orange-Auto.jpg"
+          src="/images/WebP2/Rot-Auto.webp"
           alt="خلفية سيارة"
           fill
           priority

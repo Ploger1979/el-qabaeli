@@ -3,14 +3,16 @@ import { FaFacebookF, FaWhatsapp, FaTiktok, FaEnvelope, FaHome, FaUserFriends, F
 import Image from "next/image";
 import Link from "next/link";
 
+
 export default function Footer() {
   return (
     <>
       <footer className="relative z-10 overflow-hidden text-white">
         {/* ✅ خلفية الصورة مع تغبيش وطبقة شفافة فوقها */}
         <img
-          src="/images/montagat/autos-marken-min.png"
+          src="/images/montagat/WebP/autos-marken-min.webp"
           alt="background"
+          loading="lazy"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-10" />
@@ -19,7 +21,7 @@ export default function Footer() {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-center md:text-right gap-6">
           {/* ✅ القسم الأول: تواصل معنا */}
           <div>
-            <p className="text-xl underline mb-2">تواصل معنا</p>
+            <p className="text-xl font-bold underline mb-2">تواصل معنا</p>
             <div className="flex justify-center md:justify-start gap-3 text-2xl">
               <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
               <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
@@ -41,7 +43,7 @@ export default function Footer() {
             </div>
 
             {/* ✅ لوجو الموقع */}
-            <div className="relative w-180 h-50">
+            <div className="relative w-200 h-50">
               <Image
                 src="/images/Auto-logo-dunkelblau.png"
                 alt="Logo"
@@ -52,7 +54,7 @@ export default function Footer() {
             </div>
 
             {/* ✅ جملة ختامية بسيطة */}
-            <p className="text-lg font-semibold mt-1">
+            <p className="text-xl font-semibold mt-1">
               القبايلي – إكسسوارات تليق بسيارتك
             </p>
           </div>

@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "القبايلي",
     images: [
       {
-        url: "/images/opengraph-preview.jpg",
+        url: "/images/WebP2/logo-share-1200x630.webp",
         width: 1200,
         height: 630,
         alt: "صورة لموقع القبايلي",

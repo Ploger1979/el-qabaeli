@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex justify-center md:justify-start gap-3 text-2xl">
               <a href="https://wa.me/218925881949" target="_blank" className="bg-green-500 p-2 rounded-full hover:scale-110 transition"><FaWhatsapp /></a>
               <a href="https://facebook.com/slyman.kylany.193044" target="_blank" className="bg-blue-600 p-2 rounded-full hover:scale-110 transition"><FaFacebookF /></a>
-              <a href="https://www.tiktok.com/@sliman.kelane" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 transition"><FaTiktok /></a>
+              <a href="https://www.tiktok.com/@elqabaeli" target="_blank" className="bg-black p-2 rounded-full hover:scale-110 transition"><FaTiktok /></a>
               <a href="mailto:info@el-qabaeli.com" className="bg-red-500 p-2 rounded-full hover:scale-110 transition"><FaEnvelope /></a>
             </div>
           </div>

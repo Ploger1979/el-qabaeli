@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { CartProvider } from "./context/CartContext"; 
+import { CartProvider } from "./context/CartContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +14,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "القبايلي – أفضل إكسسوارات السيارات في ليبيا",
@@ -49,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "القبايلي",
     images: [
       {
-        url: "/images/WebP2/logo-share-1200x630.webp",
+        url: "https://el-qabaeli.com/images/WebP2/logo-share-1200x630.webp",
         width: 1200,
         height: 630,
         alt: "صورة لموقع القبايلي",
@@ -64,8 +63,6 @@ export const viewport = {
   themeColor: "#000080",
 };
 
-
-
 export default function RootLayout({
   children,
 }: {
@@ -78,6 +75,19 @@ export default function RootLayout({
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google-site-verification" content="DVAvfeFK4iJBpyAXVu-p_ovv4OulMllBSq-p" />
+        {/* ✅ وسوم Open Graph لفيسبوك وواتساب */}
+        <meta property="og:title" content="القبايلي – إكسسوارات سيارات فاخرة في ليبيا" />
+        <meta property="og:description" content="استعرض أجود كماليات السيارات من القبايلي، مع توصيل داخل وخارج بنغازي، وخدمة عملاء احترافية." />
+        <meta property="og:image" content="https://el-qabaeli.com/images/WebP2/logo-share-1200x630.webp" />
+        <meta property="og:url" content="https://el-qabaeli.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="القبايلي" />
+        <meta property="og:locale" content="ar_LY" />
+        {/* ✅ وسوم Twitter Card (اختياري لكن مفيد) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="القبايلي – إكسسوارات سيارات فاخرة في ليبيا" />
+        <meta name="twitter:description" content="استعرض أجود كماليات السيارات من القبايلي، مع توصيل داخل وخارج بنغازي، وخدمة عملاء احترافية." />
+        <meta name="twitter:image" content="https://el-qabaeli.com/images/WebP2/logo-share-1200x630.webp" />
         {/* ✅ حل مباشر لأيقونة favicon */}
         <link rel="icon" href="/favicon.ico" />
       </head>

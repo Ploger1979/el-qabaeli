@@ -115,7 +115,7 @@ export default function CheckoutPage() {
           <div className="bg-yellow-100 text-yellow-800 p-4 rounded-md shadow-md text-sm leading-relaxed">
             ⚠️ بعد الضغط على زر <strong>تأكيد الدفع</strong> سيتم فتح WhatsApp –
             <span className="font-bold underline"> الرجاء إرسال صورة الحوالة يدويًا </span>
-            داخل المحادثة لتأكيد الدفع.
+            داخل المحادثة لتأكيد الدفع. لكي نتمكن من تجهيز طلبات السلة الخاصة بك. شكرًا لتعاونكم
           </div>
         </div>
       )}

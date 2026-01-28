@@ -6,7 +6,8 @@ https://el-qabaeli.com/
 
 ## 📸 معاينة
 > ضع صورة هنا (Preview) بعد رفعها داخل الريبو
-![El-Qabaeli Preview](./og-qabaeli.png)
+![El-Qabaeli Preview](./public/og-qabaeli.png)
+
 
 
 

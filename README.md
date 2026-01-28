@@ -6,7 +6,8 @@ https://el-qabaeli.com/
 
 ## 📸 معاينة
 > ضع صورة هنا (Preview) بعد رفعها داخل الريبو
-![El-Qabaeli Preview](./public/og-qabaeli.jpg)
+![El-Qabaeli Preview](/public/og-qabaeli.png)
+
 
 ## ✅ أهم المميزات
 - واجهة عربية (RTL) وتجربة مستخدم مناسبة للموبايل

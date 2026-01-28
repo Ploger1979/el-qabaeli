@@ -8,8 +8,8 @@ https://el-qabaeli.com/
 
 ## 📸 معاينة
 
-> ضع صورة هنا (Preview) بعد رفعها داخل الريبو
-> ![El-Qabaeli Preview](./public/opengraph-preview.png)
+> ضع صورة هنا (Preview) بعد رفعها داخل الريبو![El-Qabaeli Preview](./og-qabaeli.png)
+
 
 ## ✅ أهم المميزات
 
